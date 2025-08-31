@@ -1,20 +1,62 @@
----
-name: Initiative
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+name: "🚀 Initiative"
+description: "Create a high-level Initiative (above Epics)"
+title: "Initiative: <short name>"
+labels: ["type: initiative"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Initiative
+        Use this template to describe a high-level Initiative that spans multiple Epics.
 
----
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      description: Who is accountable for driving this initiative?
+      placeholder: "@username"
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What is the purpose of this initiative? What problem are we solving?
+      placeholder: |
+        - Provide clear objective
+        - State why this initiative matters
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included and what is out of scope?
+      placeholder: |
+        **In scope:**
+        - ...
+        **Out of scope:**
+        - ...
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+  - type: textarea
+    id: success
+    attributes:
+      label: Success Metrics / KPIs
+      description: How will we know this initiative is successful?
+      placeholder: |
+        - Metric 1 (target value)
+        - Metric 2 (target value)
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Timeline / Target Quarter
+      description: When should this initiative be delivered?
+      placeholder: e.g., Q4 2025
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Epics
+      description: Link to Epics that this initiative will drive
+      placeholder: |
+        - #123 Epic: Fraud Detection UI
+        - #124 Epic: Transaction Scoring Engine
