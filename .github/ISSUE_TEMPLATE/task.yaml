@@ -9,13 +9,6 @@ body:
         ## ✅ Task / Story
         Use this template for small, actionable pieces of work linked to an Epic.
 
-  - type: input
-    id: assignee
-    attributes:
-      label: Assignee
-      description: Who will deliver this task?
-      placeholder: "@username"
-
   - type: textarea
     id: description
     attributes:
@@ -33,19 +26,3 @@ body:
       placeholder: |
         - Criteria 1
         - Criteria 2
-
-  - type: textarea
-    id: dependencies
-    attributes:
-      label: Dependencies
-      description: Does this task depend on other work?
-      placeholder: |
-        - #123 Epic: User Login
-        - #456 Task: Setup database schema
-
-  - type: textarea
-    id: related
-    attributes:
-      label: Related Epic
-      description: Link the Epic this task belongs to
-      placeholder: "#789 Epic: Authentication Module"
