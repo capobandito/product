@@ -9,13 +9,6 @@ body:
         ## 🚀 Initiative
         Use this template to describe a high-level Initiative that spans multiple Epics.
 
-  - type: input
-    id: owner
-    attributes:
-      label: Owner
-      description: Who is accountable for driving this initiative?
-      placeholder: "@username"
-
   - type: textarea
     id: goal
     attributes:
