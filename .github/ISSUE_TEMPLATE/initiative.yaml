@@ -51,12 +51,3 @@ body:
       label: Timeline / Target Quarter
       description: When should this initiative be delivered?
       placeholder: e.g., Q4 2025
-
-  - type: textarea
-    id: related
-    attributes:
-      label: Related Epics
-      description: Link to Epics that this initiative will drive
-      placeholder: |
-        - #123 Epic: Fraud Detection UI
-        - #124 Epic: Transaction Scoring Engine
