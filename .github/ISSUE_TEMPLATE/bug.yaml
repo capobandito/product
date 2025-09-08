@@ -55,3 +55,17 @@ body:
 
   - type: textarea
     id: actual
+    attributes:
+      label: Actual Behavior
+      description: What happened instead of the expected behavior?
+      placeholder: |
+        - Describe what actually occurred
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Issues / Epics
+      description: Link to Epics or Tasks this bug relates to (if any)
+      placeholder: |
+        - #123 Epic: Authentication
+        - #456 Task: User login form
