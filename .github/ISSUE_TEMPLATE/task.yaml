@@ -17,6 +17,8 @@ body:
       placeholder: |
         - Explain the work to be done
         - Add relevant technical notes or context
+    validations:
+      required: true    
 
   - type: textarea
     id: acceptance
